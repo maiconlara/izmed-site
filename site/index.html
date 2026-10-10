@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>IZMED: Recepção, agenda e financeiro para consultórios</title>
+<meta name="description" content="Organize a recepção, a agenda, o relacionamento com pacientes e o financeiro gerencial do consultório em uma plataforma administrativa. Conheça a demonstração IZMED.">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#087f68">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="IZMED: Recepção, agenda e financeiro para consultórios"><meta name="twitter:card" content="summary_large_image"><meta property="og:type" content="website"><meta property="og:locale" content="pt_BR"><meta property="og:title" content="IZMED: Recepção, agenda e financeiro para consultórios"><meta property="og:description" content="Conecte recepção, agenda, relacionamento e financeiro gerencial. Conheça a plataforma administrativa IZMED."><meta property="og:image" content="https://izmed.com.br/site/cover.png">
+<link rel="canonical" href="https://izmed.com.br/site"><meta property="og:url" content="https://izmed.com.br/site">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/site-assets/fonts/outfit-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/site-assets/fonts/figtree-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" fetchpriority="high" imagesrcset="/site-assets/img/medica-ao-telefone-480x576.webp 480w, /site-assets/img/medica-ao-telefone-720x864.webp 720w, /site-assets/img/medica-ao-telefone-960x1152.webp 960w, /site-assets/img/medica-ao-telefone-1200x1440.webp 1200w" imagesizes="(min-width: 1024px) 560px, calc(100vw - 48px)">
+<script src="/theme-init.js"></script>
+<link rel="stylesheet" href="/home.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://izmed.com.br/#organization","name":"IZMED","url":"https://izmed.com.br/site","logo":"https://izmed.com.br/favicon.svg"},{"@type":"WebSite","@id":"https://izmed.com.br/#website","url":"https://izmed.com.br/site","name":"IZMED","publisher":{"@id":"https://izmed.com.br/#organization"},"inLanguage":"pt-BR"},{"@type":"SoftwareApplication","name":"IZMED","applicationCategory":"BusinessApplication","operatingSystem":"Web","url":"https://izmed.com.br/site","description":"Plataforma administrativa para organizar recepção, agenda, relacionamento e financeiro gerencial de consultórios médicos.","publisher":{"@id":"https://izmed.com.br/#organization"}}]}</script>
+<script type="module" src="/home.js"></script>
+<script type="application/ld+json" data-faq>{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Já posso usar no WhatsApp?","acceptedAnswer":{"@type":"Answer","text":"Estamos preparando a implantação assistida no WhatsApp. A demonstração atual funciona no chat web; a ativação do número e as condições de uso serão verificadas antes do piloto."}},{"@type":"Question","name":"A IZMED substitui minha secretária?","acceptedAnswer":{"@type":"Answer","text":"A proposta é apoiar a recepção nas etapas repetitivas. Sua equipe continua responsável pelas situações que precisam de atenção humana e pode assumir a conversa."}},{"@type":"Question","name":"Como as respostas e os horários são conferidos?","acceptedAnswer":{"@type":"Answer","text":"O fluxo usa informações cadastradas e consulta a agenda antes de reservar. O cadastro precisa estar atualizado, e situações não previstas exigem revisão da equipe. Os testes do piloto servem para identificar e corrigir falhas."}},{"@type":"Question","name":"Preciso trocar meu sistema atual?","acceptedAnswer":{"@type":"Answer","text":"O piloto usa a agenda IZMED. Avaliamos sua operação antes de propor a implantação. Integração automática com outros sistemas ainda não está disponível."}},{"@type":"Question","name":"Posso conhecer sem dados de pacientes?","acceptedAnswer":{"@type":"Answer","text":"Sim. A demonstração desta página usa informações fictícias e não faz reservas reais. O piloto inicial é de escopo acompanhado, com um consultório e um profissional."}},{"@type":"Question","name":"Quanto custa o piloto?","acceptedAnswer":{"@type":"Answer","text":"As condições comerciais serão apresentadas depois de entender o escopo do consultório. Este formulário é uma solicitação de contato e não gera contratação ou cobrança."}}]}</script>
+</head>
+<body>
+<span class="top-sentinel" aria-hidden="true"></span>
+<a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+<svg class="icon-sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><defs><symbol id="i-arrow-right" viewBox="0 0 256 256"><path d="M220.24,132.24l-72,72a6,6,0,0,1-8.48-8.48L201.51,134H40a6,6,0,0,1,0-12H201.51L139.76,60.24a6,6,0,0,1,8.48-8.48l72,72A6,6,0,0,1,220.24,132.24Z"/></symbol><symbol id="i-arrow-up-right" viewBox="0 0 256 256"><path d="M198,64V168a6,6,0,0,1-12,0V78.48L68.24,196.24a6,6,0,0,1-8.48-8.48L177.52,70H88a6,6,0,0,1,0-12H192A6,6,0,0,1,198,64Z"/></symbol><symbol id="i-play" viewBox="0 0 256 256"><path d="M231.36,116.19,87.28,28.06a14,14,0,0,0-14.18-.27A13.69,13.69,0,0,0,66,39.87V216.13a13.69,13.69,0,0,0,7.1,12.08,14,14,0,0,0,14.18-.27l144.08-88.13a13.82,13.82,0,0,0,0-23.62Zm-6.26,13.38L81,217.7a2,2,0,0,1-2.06,0,1.78,1.78,0,0,1-1-1.61V39.87a1.78,1.78,0,0,1,1-1.61A2.06,2.06,0,0,1,80,38a2,2,0,0,1,1,.31L225.1,126.43a1.82,1.82,0,0,1,0,3.14Z"/></symbol><symbol id="i-check" viewBox="0 0 256 256"><path d="M228.24,76.24l-128,128a6,6,0,0,1-8.48,0l-56-56a6,6,0,0,1,8.48-8.48L96,191.51,219.76,67.76a6,6,0,0,1,8.48,8.48Z"/></symbol><symbol id="i-x" viewBox="0 0 256 256"><path d="M204.24,195.76a6,6,0,1,1-8.48,8.48L128,136.49,60.24,204.24a6,6,0,0,1-8.48-8.48L119.51,128,51.76,60.24a6,6,0,0,1,8.48-8.48L128,119.51l67.76-67.75a6,6,0,0,1,8.48,8.48L136.49,128Z"/></symbol><symbol id="i-list" viewBox="0 0 256 256"><path d="M222,128a6,6,0,0,1-6,6H40a6,6,0,0,1,0-12H216A6,6,0,0,1,222,128ZM40,70H216a6,6,0,0,0,0-12H40a6,6,0,0,0,0,12ZM216,186H40a6,6,0,0,0,0,12H216a6,6,0,0,0,0-12Z"/></symbol><symbol id="i-plus" viewBox="0 0 256 256"><path d="M222,128a6,6,0,0,1-6,6H134v82a6,6,0,0,1-12,0V134H40a6,6,0,0,1,0-12h82V40a6,6,0,0,1,12,0v82h82A6,6,0,0,1,222,128Z"/></symbol><symbol id="i-arrow-counter-clockwise" viewBox="0 0 256 256"><path d="M222,128a94,94,0,0,1-92.74,94H128a93.43,93.43,0,0,1-64.5-25.65,6,6,0,1,1,8.24-8.72A82,82,0,1,0,70,70l-.19.19L39.44,98H72a6,6,0,0,1,0,12H24a6,6,0,0,1-6-6V56a6,6,0,0,1,12,0V90.34L61.63,61.4A94,94,0,0,1,222,128Z"/></symbol><symbol id="i-chat-circle-text" viewBox="0 0 256 256"><path d="M166,112a6,6,0,0,1-6,6H96a6,6,0,0,1,0-12h64A6,6,0,0,1,166,112Zm-6,26H96a6,6,0,0,0,0,12h64a6,6,0,0,0,0-12Zm70-10A102,102,0,0,1,79.31,217.65L44.44,229.27a14,14,0,0,1-17.71-17.71l11.62-34.87A102,102,0,1,1,230,128Zm-12,0A90,90,0,1,0,50.08,173.06a6,6,0,0,1,.5,4.91L38.12,215.35a2,2,0,0,0,2.53,2.53L78,205.42a6.2,6.2,0,0,1,1.9-.31,6.09,6.09,0,0,1,3,.81A90,90,0,0,0,218,128Z"/></symbol><symbol id="i-calendar-check" viewBox="0 0 256 256"><path d="M208,34H182V24a6,6,0,0,0-12,0V34H86V24a6,6,0,0,0-12,0V34H48A14,14,0,0,0,34,48V208a14,14,0,0,0,14,14H208a14,14,0,0,0,14-14V48A14,14,0,0,0,208,34ZM48,46H74V56a6,6,0,0,0,12,0V46h84V56a6,6,0,0,0,12,0V46h26a2,2,0,0,1,2,2V82H46V48A2,2,0,0,1,48,46ZM208,210H48a2,2,0,0,1-2-2V94H210V208A2,2,0,0,1,208,210Zm-39.76-86.24a6,6,0,0,1,0,8.48l-48,48a6,6,0,0,1-8.48,0l-24-24a6,6,0,0,1,8.48-8.48L116,167.51l43.76-43.75A6,6,0,0,1,168.24,123.76Z"/></symbol><symbol id="i-users-three" viewBox="0 0 256 256"><path d="M243.6,148.8a6,6,0,0,1-8.4-1.2A53.58,53.58,0,0,0,192,126a6,6,0,0,1,0-12,26,26,0,1,0-25.18-32.5,6,6,0,0,1-11.62-3,38,38,0,1,1,59.91,39.63A65.69,65.69,0,0,1,244.8,140.4,6,6,0,0,1,243.6,148.8ZM189.19,213a6,6,0,0,1-2.19,8.2,5.9,5.9,0,0,1-3,.81,6,6,0,0,1-5.2-3,59,59,0,0,0-101.62,0,6,6,0,1,1-10.38-6A70.1,70.1,0,0,1,103,182.55a46,46,0,1,1,50.1,0A70.1,70.1,0,0,1,189.19,213ZM128,178a34,34,0,1,0-34-34A34,34,0,0,0,128,178ZM70,120a6,6,0,0,0-6-6A26,26,0,1,1,89.18,81.49a6,6,0,1,0,11.62-3,38,38,0,1,0-59.91,39.63A65.69,65.69,0,0,0,11.2,140.4a6,6,0,1,0,9.6,7.2A53.58,53.58,0,0,1,64,126,6,6,0,0,0,70,120Z"/></symbol><symbol id="i-calendar-dots" viewBox="0 0 256 256"><path d="M208,34H182V24a6,6,0,0,0-12,0V34H86V24a6,6,0,0,0-12,0V34H48A14,14,0,0,0,34,48V208a14,14,0,0,0,14,14H208a14,14,0,0,0,14-14V48A14,14,0,0,0,208,34ZM48,46H74V56a6,6,0,0,0,12,0V46h84V56a6,6,0,0,0,12,0V46h26a2,2,0,0,1,2,2V82H46V48A2,2,0,0,1,48,46ZM208,210H48a2,2,0,0,1-2-2V94H210V208A2,2,0,0,1,208,210Zm-70-78a10,10,0,1,1-10-10A10,10,0,0,1,138,132Zm44,0a10,10,0,1,1-10-10A10,10,0,0,1,182,132ZM94,172a10,10,0,1,1-10-10A10,10,0,0,1,94,172Zm44,0a10,10,0,1,1-10-10A10,10,0,0,1,138,172Zm44,0a10,10,0,1,1-10-10A10,10,0,0,1,182,172Z"/></symbol><symbol id="i-funnel" viewBox="0 0 256 256"><path d="M228.77,50.34A13.8,13.8,0,0,0,216,42H40A14,14,0,0,0,29.67,65.42l.06.07L98,138.38V216a14,14,0,0,0,21.77,11.64l32-21.33A14,14,0,0,0,158,194.66V138.38l68.33-73A13.82,13.82,0,0,0,228.77,50.34Zm-11.26,6.94L147.62,131.9A6,6,0,0,0,146,136v58.66a2,2,0,0,1-.89,1.67l-32,21.33A2,2,0,0,1,110,216V136a6,6,0,0,0-1.62-4.1L38.53,57.32A2,2,0,0,1,40,54H216a1.9,1.9,0,0,1,1.83,1.19A1.86,1.86,0,0,1,217.51,57.28Z"/></symbol><symbol id="i-chart-line-up" viewBox="0 0 256 256"><path d="M230,208a6,6,0,0,1-6,6H32a6,6,0,0,1-6-6V48a6,6,0,0,1,12,0V161.52l53.76-53.76a6,6,0,0,1,8.48,0L128,135.51,185.52,78H160a6,6,0,0,1,0-12h40a6,6,0,0,1,6,6v40a6,6,0,0,1-12,0V86.48l-61.76,61.76a6,6,0,0,1-8.48,0L96,120.49l-58,58V202H224A6,6,0,0,1,230,208Z"/></symbol><symbol id="i-files" viewBox="0 0 256 256"><path d="M212.24,67.76l-40-40A6,6,0,0,0,168,26H88A14,14,0,0,0,74,40V58H56A14,14,0,0,0,42,72V216a14,14,0,0,0,14,14H168a14,14,0,0,0,14-14V198h18a14,14,0,0,0,14-14V72A6,6,0,0,0,212.24,67.76ZM170,216a2,2,0,0,1-2,2H56a2,2,0,0,1-2-2V72a2,2,0,0,1,2-2h77.51L170,106.49Zm32-32a2,2,0,0,1-2,2H182V104a6,6,0,0,0-1.76-4.24l-40-40A6,6,0,0,0,136,58H86V40a2,2,0,0,1,2-2h77.51L202,74.49Zm-60-32a6,6,0,0,1-6,6H88a6,6,0,0,1,0-12h48A6,6,0,0,1,142,152Zm0,32a6,6,0,0,1-6,6H88a6,6,0,0,1,0-12h48A6,6,0,0,1,142,184Z"/></symbol><symbol id="i-shield-check" viewBox="0 0 256 256"><path d="M208,42H48A14,14,0,0,0,34,56v56c0,51.94,25.12,83.4,46.2,100.64,22.73,18.6,45.27,24.89,46.22,25.15a6,6,0,0,0,3.16,0c.95-.26,23.49-6.55,46.22-25.15C196.88,195.4,222,163.94,222,112V56A14,14,0,0,0,208,42Zm2,70c0,37.76-13.94,68.39-41.44,91.06A131.17,131.17,0,0,1,128,225.72a130.94,130.94,0,0,1-40.56-22.66C59.94,180.39,46,149.76,46,112V56a2,2,0,0,1,2-2H208a2,2,0,0,1,2,2ZM172.24,99.76a6,6,0,0,1,0,8.48l-56,56a6,6,0,0,1-8.48,0l-24-24a6,6,0,0,1,8.48-8.48L112,151.51l51.76-51.75A6,6,0,0,1,172.24,99.76Z"/></symbol><symbol id="i-sparkle" viewBox="0 0 256 256"><path d="M196.89,130.94,144.4,111.6,125.06,59.11a13.92,13.92,0,0,0-26.12,0L79.6,111.6,27.11,130.94a13.92,13.92,0,0,0,0,26.12L79.6,176.4l19.34,52.49a13.92,13.92,0,0,0,26.12,0L144.4,176.4l52.49-19.34a13.92,13.92,0,0,0,0-26.12Zm-4.15,14.86-55.08,20.3a6,6,0,0,0-3.56,3.56l-20.3,55.08a1.92,1.92,0,0,1-3.6,0L89.9,169.66a6,6,0,0,0-3.56-3.56L31.26,145.8a1.92,1.92,0,0,1,0-3.6l55.08-20.3a6,6,0,0,0,3.56-3.56l20.3-55.08a1.92,1.92,0,0,1,3.6,0l20.3,55.08a6,6,0,0,0,3.56,3.56l55.08,20.3a1.92,1.92,0,0,1,0,3.6ZM146,40a6,6,0,0,1,6-6h18V16a6,6,0,0,1,12,0V34h18a6,6,0,0,1,0,12H182V64a6,6,0,0,1-12,0V46H152A6,6,0,0,1,146,40ZM246,88a6,6,0,0,1-6,6H230v10a6,6,0,0,1-12,0V94H208a6,6,0,0,1,0-12h10V72a6,6,0,0,1,12,0V82h10A6,6,0,0,1,246,88Z"/></symbol><symbol id="i-question" viewBox="0 0 256 256"><path d="M138,180a10,10,0,1,1-10-10A10,10,0,0,1,138,180ZM128,74c-21,0-38,15.25-38,34v4a6,6,0,0,0,12,0v-4c0-12.13,11.66-22,26-22s26,9.87,26,22-11.66,22-26,22a6,6,0,0,0-6,6v8a6,6,0,0,0,12,0v-2.42c18.11-2.58,32-16.66,32-33.58C166,89.25,149,74,128,74Zm102,54A102,102,0,1,1,128,26,102.12,102.12,0,0,1,230,128Zm-12,0a90,90,0,1,0-90,90A90.1,90.1,0,0,0,218,128Z"/></symbol><symbol id="i-headset" viewBox="0 0 256 256"><path d="M200.47,56.07A101.37,101.37,0,0,0,128.77,26H128A102,102,0,0,0,26,128v56a22,22,0,0,0,22,22H64a22,22,0,0,0,22-22V144a22,22,0,0,0-22-22H38.2A90,90,0,0,1,128,38h.68a89.71,89.71,0,0,1,89.13,84H192a22,22,0,0,0-22,22v40a22,22,0,0,0,22,22h26v2a26,26,0,0,1-26,26H136a6,6,0,0,0,0,12h56a38,38,0,0,0,38-38V128A101.44,101.44,0,0,0,200.47,56.07ZM64,134a10,10,0,0,1,10,10v40a10,10,0,0,1-10,10H48a10,10,0,0,1-10-10V134Zm118,50V144a10,10,0,0,1,10-10h26v60H192A10,10,0,0,1,182,184Z"/></symbol><symbol id="i-address-book" viewBox="0 0 256 256"><path d="M159.11,142.13a38,38,0,1,0-46.22,0A65.75,65.75,0,0,0,83.2,164.4a6,6,0,0,0,9.6,7.2,54,54,0,0,1,86.4,0,6,6,0,0,0,9.6-7.2A65.75,65.75,0,0,0,159.11,142.13ZM110,112a26,26,0,1,1,26,26A26,26,0,0,1,110,112Zm98-86H64A14,14,0,0,0,50,40V66H32a6,6,0,0,0,0,12H50v44H32a6,6,0,0,0,0,12H50v44H32a6,6,0,0,0,0,12H50v26a14,14,0,0,0,14,14H208a14,14,0,0,0,14-14V40A14,14,0,0,0,208,26Zm2,190a2,2,0,0,1-2,2H64a2,2,0,0,1-2-2V40a2,2,0,0,1,2-2H208a2,2,0,0,1,2,2Z"/></symbol><symbol id="i-list-checks" viewBox="0 0 256 256"><path d="M222,128a6,6,0,0,1-6,6H128a6,6,0,0,1,0-12h88A6,6,0,0,1,222,128ZM128,70h88a6,6,0,0,0,0-12H128a6,6,0,0,0,0,12Zm88,116H128a6,6,0,0,0,0,12h88a6,6,0,0,0,0-12ZM83.76,43.76,56,71.51,44.24,59.76a6,6,0,0,0-8.48,8.48l16,16a6,6,0,0,0,8.48,0l32-32a6,6,0,0,0-8.48-8.48Zm0,64L56,135.51,44.24,123.76a6,6,0,1,0-8.48,8.48l16,16a6,6,0,0,0,8.48,0l32-32a6,6,0,0,0-8.48-8.48Zm0,64L56,199.51,44.24,187.76a6,6,0,0,0-8.48,8.48l16,16a6,6,0,0,0,8.48,0l32-32a6,6,0,0,0-8.48-8.48Z"/></symbol><symbol id="i-hand-heart" viewBox="0 0 256 256"><path d="M229.12,142.65a22.43,22.43,0,0,0-19.55-3.88l-4.32,1C227,119.55,238,99.51,238,80c0-25.36-20.39-46-45.46-46A45.51,45.51,0,0,0,156,52a45.51,45.51,0,0,0-36.54-18C94.39,34,74,54.64,74,80c0,11.38,3.63,22.49,11.29,34.36a29.73,29.73,0,0,0-16.56,8.43L45.52,146H16A14,14,0,0,0,2,160v40a14,14,0,0,0,14,14H120a6,6,0,0,0,1.46-.18l64-16a7.16,7.16,0,0,0,.89-.3L225.17,181l.33-.15a22.6,22.6,0,0,0,3.62-38.18ZM119.46,46a33.16,33.16,0,0,1,31,20.28,6,6,0,0,0,11.1,0,33.16,33.16,0,0,1,31-20.28C210.68,46,226,61.57,226,80c0,20.24-16.18,43-46.8,65.75l-14.87,3.42A26,26,0,0,0,140,114H99.67C90.36,101.67,86,90.81,86,80,86,61.57,101.32,46,119.46,46ZM14,200V160a2,2,0,0,1,2-2H42v44H16A2,2,0,0,1,14,200Zm206.28-30-38.2,16.27L119.26,202H54V154.49l23.21-23.22A17.88,17.88,0,0,1,89.94,126H140a14,14,0,0,1,0,28H112a6,6,0,0,0,0,12h32a6,6,0,0,0,1.34-.15l67-15.41.24-.06A10.6,10.6,0,0,1,220.28,170Z"/></symbol><symbol id="i-info" viewBox="0 0 256 256"><path d="M142,176a6,6,0,0,1-6,6,14,14,0,0,1-14-14V128a2,2,0,0,0-2-2,6,6,0,0,1,0-12,14,14,0,0,1,14,14v40a2,2,0,0,0,2,2A6,6,0,0,1,142,176ZM124,94a10,10,0,1,0-10-10A10,10,0,0,0,124,94Zm106,34A102,102,0,1,1,128,26,102.12,102.12,0,0,1,230,128Zm-12,0a90,90,0,1,0-90,90A90.1,90.1,0,0,0,218,128Z"/></symbol><symbol id="i-clock" viewBox="0 0 256 256"><path d="M128,26A102,102,0,1,0,230,128,102.12,102.12,0,0,0,128,26Zm0,192a90,90,0,1,1,90-90A90.1,90.1,0,0,1,128,218Zm62-90a6,6,0,0,1-6,6H128a6,6,0,0,1-6-6V72a6,6,0,0,1,12,0v50h50A6,6,0,0,1,190,128Z"/></symbol><symbol id="i-map-pin" viewBox="0 0 256 256"><path d="M128,66a38,38,0,1,0,38,38A38,38,0,0,0,128,66Zm0,64a26,26,0,1,1,26-26A26,26,0,0,1,128,130Zm0-112a86.1,86.1,0,0,0-86,86c0,30.91,14.34,63.74,41.47,94.94a252.32,252.32,0,0,0,41.09,38,6,6,0,0,0,6.88,0,252.32,252.32,0,0,0,41.09-38c27.13-31.2,41.47-64,41.47-94.94A86.1,86.1,0,0,0,128,18Zm0,206.51C113,212.93,54,163.62,54,104a74,74,0,0,1,148,0C202,163.62,143,212.93,128,224.51Z"/></symbol><symbol id="i-check-circle" viewBox="0 0 256 256"><path d="M172.24,99.76a6,6,0,0,1,0,8.48l-56,56a6,6,0,0,1-8.48,0l-24-24a6,6,0,0,1,8.48-8.48L112,151.51l51.76-51.75A6,6,0,0,1,172.24,99.76ZM230,128A102,102,0,1,1,128,26,102.12,102.12,0,0,1,230,128Zm-12,0a90,90,0,1,0-90,90A90.1,90.1,0,0,0,218,128Z"/></symbol><symbol id="i-stethoscope" viewBox="0 0 256 256"><path d="M218,160a10,10,0,1,1-10-10A10,10,0,0,1,218,160Zm-4.35,37.58A46.05,46.05,0,0,1,168,238H144a46.06,46.06,0,0,1-46-46V149.71A62,62,0,0,1,42,88V40a6,6,0,0,1,6-6H72a6,6,0,0,1,0,12H54V88a50,50,0,0,0,50,50h.67c27.2-.36,49.33-23.16,49.33-50.83V46H136a6,6,0,0,1,0-12h24a6,6,0,0,1,6,6V87.17c0,32.43-24.68,59.44-56,62.52V192a34,34,0,0,0,34,34h24a34.05,34.05,0,0,0,33.56-28.56,38,38,0,1,1,12.09.14ZM234,160a26,26,0,1,0-26,26A26,26,0,0,0,234,160Z"/></symbol><symbol id="i-user-switch" viewBox="0 0 256 256"><path d="M252.24,132.24l-24,24a6,6,0,0,1-8.48,0l-24-24a6,6,0,1,1,8.48-8.48L218,137.51V128A90,90,0,0,0,54.87,75.5a6,6,0,1,1-9.74-7A102,102,0,0,1,230,128v9.51l13.76-13.75a6,6,0,1,1,8.48,8.48ZM210.85,187.5A102,102,0,0,1,26,128v-9.51L12.24,132.24a6,6,0,0,1-8.48-8.48l24-24a6,6,0,0,1,8.48,0l24,24a6,6,0,1,1-8.48,8.48L38,118.49V128a89.65,89.65,0,0,0,24.49,61.64,77.53,77.53,0,0,1,40-31.38,46,46,0,1,1,51,0,77.49,77.49,0,0,1,40,31.41,89.35,89.35,0,0,0,7.58-9.17,6,6,0,1,1,9.74,7ZM128,154a34,34,0,1,0-34-34A34,34,0,0,0,128,154Zm0,64a90.24,90.24,0,0,0,56.57-20,66,66,0,0,0-113.13,0A89.58,89.58,0,0,0,128,218Z"/></symbol><symbol id="i-currency-circle-dollar" viewBox="0 0 256 256"><path d="M128,26A102,102,0,1,0,230,128,102.12,102.12,0,0,0,128,26Zm0,192a90,90,0,1,1,90-90A90.1,90.1,0,0,1,128,218Zm38-70a26,26,0,0,1-26,26h-6v10a6,6,0,0,1-12,0V174H104a6,6,0,0,1,0-12h36a14,14,0,0,0,0-28H116a26,26,0,0,1,0-52h6V72a6,6,0,0,1,12,0V82h18a6,6,0,0,1,0,12H116a14,14,0,0,0,0,28h24A26,26,0,0,1,166,148Z"/></symbol><symbol id="i-seal-check" viewBox="0 0 256 256"><path d="M224.42,104.2c-3.9-4.07-7.93-8.27-9.55-12.18-1.5-3.63-1.58-9-1.67-14.68-.14-9.38-.3-20-7.42-27.12S188,42.94,178.66,42.8c-5.68-.09-11-.17-14.68-1.67-3.91-1.62-8.11-5.65-12.18-9.55C145.16,25.22,137.64,18,128,18s-17.16,7.22-23.8,13.58c-4.07,3.9-8.27,7.93-12.18,9.55-3.63,1.5-9,1.58-14.68,1.67-9.38.14-20,.3-27.12,7.42S42.94,68,42.8,77.34c-.09,5.68-.17,11-1.67,14.68-1.62,3.91-5.65,8.11-9.55,12.18C25.22,110.84,18,118.36,18,128s7.22,17.16,13.58,23.8c3.9,4.07,7.93,8.27,9.55,12.18,1.5,3.63,1.58,9,1.67,14.68.14,9.38.3,20,7.42,27.12S68,213.06,77.34,213.2c5.68.09,11,.17,14.68,1.67,3.91,1.62,8.11,5.65,12.18,9.55C110.84,230.78,118.36,238,128,238s17.16-7.22,23.8-13.58c4.07-3.9,8.27-7.93,12.18-9.55,3.63-1.5,9-1.58,14.68-1.67,9.38-.14,20-.3,27.12-7.42s7.28-17.74,7.42-27.12c.09-5.68.17-11,1.67-14.68,1.62-3.91,5.65-8.11,9.55-12.18C230.78,145.16,238,137.64,238,128S230.78,110.84,224.42,104.2Zm-8.66,39.3c-4.67,4.86-9.5,9.9-12,15.9-2.38,5.74-2.48,12.52-2.58,19.08-.11,7.44-.23,15.14-3.9,18.82s-11.38,3.79-18.82,3.9c-6.56.1-13.34.2-19.08,2.58-6,2.48-11,7.31-15.91,12-5.25,5-10.68,10.24-15.49,10.24s-10.24-5.21-15.5-10.24c-4.86-4.67-9.9-9.5-15.9-12-5.74-2.38-12.52-2.48-19.08-2.58-7.44-.11-15.14-.23-18.82-3.9s-3.79-11.38-3.9-18.82c-.1-6.56-.2-13.34-2.58-19.08-2.48-6-7.31-11-12-15.91C35.21,138.24,30,132.81,30,128s5.21-10.24,10.24-15.5c4.67-4.86,9.5-9.9,12-15.9,2.38-5.74,2.48-12.52,2.58-19.08.11-7.44.23-15.14,3.9-18.82s11.38-3.79,18.82-3.9c6.56-.1,13.34-.2,19.08-2.58,6-2.48,11-7.31,15.91-12C117.76,35.21,123.19,30,128,30s10.24,5.21,15.5,10.24c4.86,4.67,9.9,9.5,15.9,12,5.74,2.38,12.52,2.48,19.08,2.58,7.44.11,15.14.23,18.82,3.9s3.79,11.38,3.9,18.82c.1,6.56.2,13.34,2.58,19.08,2.48,6,7.31,11,12,15.91,5,5.25,10.24,10.68,10.24,15.49S220.79,138.24,215.76,143.5ZM172.24,99.76a6,6,0,0,1,0,8.48l-56,56a6,6,0,0,1-8.48,0l-24-24a6,6,0,0,1,8.48-8.48L112,151.51l51.76-51.75A6,6,0,0,1,172.24,99.76Z"/></symbol><symbol id="i-lock-simple" viewBox="0 0 256 256"><path d="M208,82H174V56a46,46,0,0,0-92,0V82H48A14,14,0,0,0,34,96V208a14,14,0,0,0,14,14H208a14,14,0,0,0,14-14V96A14,14,0,0,0,208,82ZM94,56a34,34,0,0,1,68,0V82H94ZM210,208a2,2,0,0,1-2,2H48a2,2,0,0,1-2-2V96a2,2,0,0,1,2-2H208a2,2,0,0,1,2,2Z"/></symbol><symbol id="i-sun" viewBox="0 0 256 256"><path d="M122,40V16a6,6,0,0,1,12,0V40a6,6,0,0,1-12,0Zm68,88a62,62,0,1,1-62-62A62.07,62.07,0,0,1,190,128Zm-12,0a50,50,0,1,0-50,50A50.06,50.06,0,0,0,178,128ZM59.76,68.24a6,6,0,1,0,8.48-8.48l-16-16a6,6,0,0,0-8.48,8.48Zm0,119.52-16,16a6,6,0,1,0,8.48,8.48l16-16a6,6,0,1,0-8.48-8.48ZM192,70a6,6,0,0,0,4.24-1.76l16-16a6,6,0,0,0-8.48-8.48l-16,16A6,6,0,0,0,192,70Zm4.24,117.76a6,6,0,0,0-8.48,8.48l16,16a6,6,0,0,0,8.48-8.48ZM46,128a6,6,0,0,0-6-6H16a6,6,0,0,0,0,12H40A6,6,0,0,0,46,128Zm82,82a6,6,0,0,0-6,6v24a6,6,0,0,0,12,0V216A6,6,0,0,0,128,210Zm112-88H216a6,6,0,0,0,0,12h24a6,6,0,0,0,0-12Z"/></symbol><symbol id="i-moon" viewBox="0 0 256 256"><path d="M232.13,143.64a6,6,0,0,0-6-1.49A90.07,90.07,0,0,1,113.86,29.85a6,6,0,0,0-7.49-7.48A102.88,102.88,0,0,0,54.48,58.68,102,102,0,0,0,197.32,201.52a102.88,102.88,0,0,0,36.31-51.89A6,6,0,0,0,232.13,143.64Zm-42,48.29a90,90,0,0,1-126-126A90.9,90.9,0,0,1,99.65,37.66,102.06,102.06,0,0,0,218.34,156.35,90.9,90.9,0,0,1,190.1,191.93Z"/></symbol><symbol id="i-monitor" viewBox="0 0 256 256"><path d="M208,42H48A22,22,0,0,0,26,64V176a22,22,0,0,0,22,22H208a22,22,0,0,0,22-22V64A22,22,0,0,0,208,42Zm10,134a10,10,0,0,1-10,10H48a10,10,0,0,1-10-10V64A10,10,0,0,1,48,54H208a10,10,0,0,1,10,10Zm-52,48a6,6,0,0,1-6,6H96a6,6,0,0,1,0-12h64A6,6,0,0,1,166,224Z"/></symbol><symbol id="i-mark" viewBox="0 0 31 34"><path fill-rule="evenodd" d="M9 0h13a9 9 0 0 1 9 9v16a9 9 0 0 1-9 9H9a9 9 0 0 1-9-9V9a9 9 0 0 1 9-9Zm-1.5 9v16h6V9Zm10 0v6h6V9Zm0 10v6h6v-6Z"/></symbol></defs></svg>
+
+<header class="site-header" data-state="over-brand">
+ <div class="container header-bar">
+  <a class="brand" href="/site" aria-label="IZMED, início"><svg class="logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 -1 138.67 34" width="138.67" height="34" aria-hidden="true" focusable="false"><rect x="0" y="-1" width="31" height="34" rx="9" class="logo-mark"/><rect x="7.5" y="8" width="6" height="16" rx="1" class="logo-bar"/><rect x="17.5" y="8" width="6" height="6" rx="1" class="logo-bar"/><rect x="17.5" y="18" width="6" height="6" rx="1" class="logo-bar"/><path class="logo-word" d="M41.91 27.64V10.17H46.97V27.64ZM44.44 8.02Q43.31 8.02 42.52 7.27Q41.73 6.53 41.73 5.5Q41.73 4.44 42.52 3.7Q43.31 2.97 44.44 2.97Q45.55 2.97 46.34 3.7Q47.12 4.44 47.12 5.5Q47.12 6.53 46.34 7.27Q45.55 8.02 44.44 8.02Z M49.02 27.64V24.66L57.41 14.31V14.19H49.3V10.17H63.49V13.45L55.64 23.5V23.62H63.78V27.64Z M65.83 27.64V10.17H70.51L70.79 14.61H70.43Q70.82 12.95 71.62 11.92Q72.41 10.89 73.48 10.41Q74.55 9.92 75.74 9.92Q77.62 9.92 78.76 11.12Q79.91 12.33 80.51 14.94H79.93Q80.33 13.19 81.23 12.08Q82.13 10.97 83.34 10.45Q84.55 9.92 85.88 9.92Q87.49 9.92 88.76 10.62Q90.02 11.33 90.74 12.66Q91.46 13.98 91.46 15.86V27.64H86.4V16.92Q86.4 15.52 85.65 14.81Q84.9 14.11 83.77 14.11Q82.94 14.11 82.34 14.48Q81.74 14.84 81.41 15.49Q81.08 16.14 81.08 17.03V27.64H76.21V16.83Q76.21 15.58 75.49 14.84Q74.77 14.11 73.63 14.11Q72.83 14.11 72.22 14.47Q71.6 14.83 71.25 15.51Q70.9 16.19 70.9 17.17V27.64Z M101.59 27.97Q98.87 27.97 96.92 26.88Q94.96 25.8 93.92 23.78Q92.87 21.77 92.87 18.98Q92.87 16.28 93.91 14.25Q94.95 12.22 96.86 11.09Q98.77 9.95 101.37 9.95Q103.13 9.95 104.65 10.52Q106.17 11.08 107.29 12.2Q108.42 13.31 109.05 14.97Q109.68 16.62 109.68 18.84V20.19H94.79V17.12H107.23L104.87 17.89Q104.87 16.59 104.48 15.66Q104.09 14.72 103.31 14.2Q102.54 13.69 101.4 13.69Q100.26 13.69 99.47 14.21Q98.68 14.73 98.27 15.64Q97.87 16.55 97.87 17.73V19.91Q97.87 21.34 98.34 22.3Q98.81 23.27 99.67 23.75Q100.52 24.23 101.67 24.23Q102.45 24.23 103.08 24.02Q103.71 23.8 104.17 23.37Q104.63 22.94 104.87 22.31L109.42 23.09Q108.99 24.58 107.93 25.67Q106.87 26.77 105.27 27.37Q103.67 27.97 101.59 27.97Z M117.36 27.91Q115.39 27.91 113.79 26.89Q112.18 25.88 111.25 23.87Q110.31 21.86 110.31 18.94Q110.31 15.91 111.28 13.91Q112.25 11.92 113.85 10.94Q115.45 9.95 117.32 9.95Q118.76 9.95 119.75 10.44Q120.73 10.92 121.36 11.66Q121.98 12.39 122.28 13.14H122.42V4.36H127.5V27.64H122.5V24.83H122.28Q121.95 25.58 121.32 26.28Q120.68 26.98 119.72 27.45Q118.75 27.91 117.36 27.91ZM119.01 23.91Q120.12 23.91 120.91 23.28Q121.7 22.66 122.11 21.54Q122.53 20.42 122.53 18.92Q122.53 17.41 122.12 16.3Q121.72 15.19 120.93 14.58Q120.14 13.97 119.01 13.97Q117.87 13.97 117.09 14.59Q116.31 15.22 115.91 16.33Q115.51 17.44 115.51 18.92Q115.51 20.39 115.91 21.52Q116.31 22.64 117.1 23.27Q117.89 23.91 119.01 23.91Z"/><path class="logo-period" d="M133.19 27.95Q131.98 27.95 131.16 27.15Q130.34 26.34 130.34 25.16Q130.34 23.97 131.16 23.16Q131.98 22.36 133.19 22.36Q134.38 22.36 135.2 23.16Q136.02 23.97 136.02 25.16Q136.02 26.34 135.2 27.15Q134.38 27.95 133.19 27.95Z"/></svg></a>
+  <nav id="main-nav" class="main-nav" aria-label="Navegação principal">
+   <ul class="nav-links" role="list">
+    <li><a class="nav-link" href="#plataforma">A plataforma</a></li>
+    <li><a class="nav-link" href="#como-funciona">Demonstração</a></li>
+    <li><a class="nav-link" href="#perguntas">Perguntas</a></li>
+   </ul>
+   <fieldset class="theme-choice theme-choice-menu">
+    <legend>Tema</legend>
+    <div class="theme-options"><label><input type="radio" name="theme-menu" value="system" data-theme-choice checked><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-monitor"></use></svg>Sistema</label><label><input type="radio" name="theme-menu" value="light" data-theme-choice><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-sun"></use></svg>Claro</label><label><input type="radio" name="theme-menu" value="dark" data-theme-choice><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-moon"></use></svg>Escuro</label></div>
+   </fieldset>
+   <div class="nav-actions">
+    <a class="button button-ghost nav-login" href="https://app.izmed.com.br/">Entrar <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow-up-right"></use></svg></a>
+    <a class="button button-primary nav-cta" href="#piloto" data-cta="header">Quero conhecer o piloto <span class="button-chip" aria-hidden="true"><svg class="icon" focusable="false"><use href="#i-arrow-right"></use></svg></span></a>
+   </div>
+  </nav>
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menu"><span></span><span></span></button>
+ </div>
+ <button class="theme-toggle" type="button" popovertarget="theme-panel" data-choice="system" aria-label="Alterar tema (atual: sistema)"><svg class="icon icon-system" aria-hidden="true" focusable="false"><use href="#i-monitor"></use></svg><svg class="icon icon-light" aria-hidden="true" focusable="false"><use href="#i-sun"></use></svg><svg class="icon icon-dark" aria-hidden="true" focusable="false"><use href="#i-moon"></use></svg></button>
+ <div id="theme-panel" class="theme-panel" popover>
+  <fieldset class="theme-choice">
+   <legend>Tema</legend>
+   <label><input type="radio" name="theme-panel" value="system" data-theme-choice checked><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-monitor"></use></svg>Sistema<svg class="icon theme-check" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg></label><label><input type="radio" name="theme-panel" value="light" data-theme-choice><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-sun"></use></svg>Claro<svg class="icon theme-check" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg></label><label><input type="radio" name="theme-panel" value="dark" data-theme-choice><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-moon"></use></svg>Escuro<svg class="icon theme-check" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg></label>
+  </fieldset>
+ </div>
+</header>
+
+<main id="conteudo">
+ <section class="hero band-brand" aria-labelledby="hero-title">
+  <div class="container hero-grid">
+   <div class="hero-copy">
+    <p class="eyebrow"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-stethoscope"></use></svg>Gestão administrativa para consultórios</p>
+    <h1 id="hero-title" class="hero-title"><span>Recepção organizada.</span> <span class="title-soft">Financeiro sob controle.</span></h1>
+    <p class="hero-lead">Agenda, conversas, relacionamento e financeiro gerencial em um só lugar.</p>
+    <div class="hero-actions">
+     <a class="button button-on-brand" href="#piloto" data-cta="hero">Quero conhecer o piloto <span class="button-chip" aria-hidden="true"><svg class="icon" focusable="false"><use href="#i-arrow-right"></use></svg></span></a>
+     <a class="text-link text-link-on-brand" href="#como-funciona"><span class="play-chip" aria-hidden="true"><svg class="icon" focusable="false"><use href="#i-play"></use></svg></span>Explorar demonstração</a>
+    </div>
+   </div>
+   <figure class="hero-media bezel bezel-on-brand">
+    <img class="bezel-core" src="/site-assets/img/medica-ao-telefone-960x1152.webp" srcset="/site-assets/img/medica-ao-telefone-480x576.webp 480w, /site-assets/img/medica-ao-telefone-720x864.webp 720w, /site-assets/img/medica-ao-telefone-960x1152.webp 960w, /site-assets/img/medica-ao-telefone-1200x1440.webp 1200w" sizes="(min-width: 1024px) 560px, calc(100vw - 48px)" width="960" height="1152" alt="Médica ao telefone, sentada à mesa do consultório com o notebook aberto" fetchpriority="high" decoding="async">
+   </figure>
+  </div>
+ </section>
+
+ <section class="value-strip-wrap" aria-labelledby="value-title">
+  <div class="container">
+   <div class="value-strip">
+    <p id="value-title" class="value-strip-title">Pensada para a rotina do consultório</p>
+    <ul class="value-list" role="list">
+     <li><span class="icon-tile icon-tile-sm" aria-hidden="true"><svg class="icon" focusable="false"><use href="#i-chat-circle-text"></use></svg></span>Conversas com continuidade</li>
+     <li><span class="icon-tile icon-tile-sm" aria-hidden="true"><svg class="icon" focusable="false"><use href="#i-calendar-check"></use></svg></span>Agendamento com confirmação</li>
+     <li><span class="icon-tile icon-tile-sm" aria-hidden="true"><svg class="icon" focusable="false"><use href="#i-users-three"></use></svg></span>Equipe no controle</li>
+    </ul>
+   </div>
+  </div>
+ </section>
+
+ <section class="section demo-section" id="como-funciona" aria-labelledby="demo-title">
+  <div class="container">
+   <header class="section-head section-head-center" data-reveal>
+    <h2 id="demo-title" class="section-title">Veja a conversa virar um agendamento.</h2>
+    <p class="section-lead">Escolha uma situação e acompanhe o próximo passo. Simples para quem pergunta. Organizado para quem atende.</p>
+   </header>
+   <div class="demo-stage bezel" id="interactive-demo" data-reveal>
+    <div class="demo-core bezel-core">
+     <div class="demo-sidebar">
+      <p class="demo-caption">Explore a experiência</p>
+      <div class="scenario-buttons" role="group" aria-label="Situações da demonstração">
+       <button type="button" class="scenario active" data-scenario="booking" aria-pressed="true"><span class="icon-tile icon-tile-sm" aria-hidden="true"><svg class="icon" focusable="false"><use href="#i-calendar-check"></use></svg></span><span class="scenario-text"><strong>Marcar uma consulta</strong><small>Da escolha à confirmação</small></span></button>
+       <button type="button" class="scenario" data-scenario="price" aria-pressed="false"><span class="icon-tile icon-tile-sm" aria-hidden="true"><svg class="icon" focusable="false"><use href="#i-question"></use></svg></span><span class="scenario-text"><strong>Tirar uma dúvida</strong><small>Informações do consultório</small></span></button>
+       <button type="button" class="scenario" data-scenario="human" aria-pressed="false"><span class="icon-tile icon-tile-sm" aria-hidden="true"><svg class="icon" focusable="false"><use href="#i-headset"></use></svg></span><span class="scenario-text"><strong>Falar com a equipe</strong><small>Continuidade com uma pessoa</small></span></button>
+      </div>
+      <p class="demo-disclaimer">Demonstração ilustrativa. Dados fictícios, sem reserva real.</p>
+      <button class="reset-demo" type="button"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow-counter-clockwise"></use></svg>Reiniciar demonstração</button>
+     </div>
+     <div class="demo-conversation">
+      <div class="demo-chat-head">
+       <span class="assistant-avatar" aria-hidden="true"><svg class="icon" focusable="false"><use href="#i-sparkle"></use></svg></span>
+       <div class="demo-chat-id"><strong>Clínica Aurora</strong><small id="demo-agent">Assistente virtual IZMED</small></div>
+       <span class="tag">Demo</span>
+      </div>
+      <div id="demo-messages" class="demo-messages" role="log" aria-live="polite" aria-label="Conversa ilustrativa"></div>
+      <div id="demo-controls" class="demo-controls"></div>
+     </div>
+     <aside class="demo-result" aria-label="Por dentro do consultório">
+      <p class="demo-result-label"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-calendar-dots"></use></svg>Por dentro do consultório</p>
+      <div id="demo-panel" class="demo-panel" aria-live="polite"></div>
+      <p class="demo-trace"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-info"></use></svg><span id="demo-trace">Aguardando a escolha do horário</span></p>
+     </aside>
+    </div>
+   </div>
+   <noscript><p class="noscript-note">A demonstração interativa precisa de JavaScript. O fluxo é: consulta de horários → escolha → confirmação → registro na agenda. Você pode entrar no sistema pelo link no menu.</p></noscript>
+  </div>
+ </section>
+
+ <section class="section section-subtle platform-section" id="plataforma" aria-labelledby="platform-title">
+  <div class="container">
+   <header class="section-head" data-reveal>
+    <h2 id="platform-title" class="section-title">Do primeiro contato ao resultado do mês.</h2>
+    <p class="section-lead">IZMED reúne rotinas administrativas que costumam ficar espalhadas entre agenda, conversas e planilhas.</p>
+   </header>
+   <div class="bento" data-reveal-group>
+    <article class="bento-cell bento-photo">
+     <img class="bento-image" src="/site-assets/img/recepcao-960x540.webp" srcset="/site-assets/img/recepcao-640x360.webp 640w, /site-assets/img/recepcao-960x540.webp 960w, /site-assets/img/recepcao-1280x720.webp 1280w" sizes="(min-width: 1318px) 720px, (min-width: 1024px) 56vw, calc(100vw - 48px)" width="960" height="540" alt="Profissionais conferindo papéis no balcão da recepção de uma clínica" loading="lazy" decoding="async">
+     <div class="bento-body">
+      <span class="icon-tile" aria-hidden="true"><svg class="icon" focusable="false"><use href="#i-calendar-dots"></use></svg></span>
+      <h3 class="card-title">Agenda e recepção</h3>
+      <p>Organize consultas, cadastros e conversas. A equipe vê o contexto, acompanha pendências e confirma cada próximo passo.</p>
+      <ul class="tags" role="list"><li>Agenda</li><li>Pacientes</li><li>Conversas</li></ul>
+     </div>
+    </article>
+    <article class="bento-cell bento-plain">
+     <span class="icon-tile" aria-hidden="true"><svg class="icon" focusable="false"><use href="#i-funnel"></use></svg></span>
+     <h3 class="card-title">Funil de relacionamento</h3>
+     <p>Acompanhe origem, etapa, valor potencial e próxima ação de cada oportunidade, com histórico para a equipe retomar o contato.</p>
+     <ul class="tags" role="list"><li>Origem</li><li>Etapas</li><li>Próxima ação</li></ul>
+    </article>
+    <article class="bento-cell bento-tint">
+     <span class="icon-tile icon-tile-surface" aria-hidden="true"><svg class="icon" focusable="false"><use href="#i-chart-line-up"></use></svg></span>
+     <h3 class="card-title">Financeiro gerencial</h3>
+     <p>Lance recebimentos e despesas, configure taxas e provisões, emita comprovantes administrativos e compare DRE por competência com o caixa.</p>
+     <ul class="tags tags-surface" role="list"><li>Receitas e despesas</li><li>DRE</li><li>Fluxo de caixa</li></ul>
+    </article>
+    <article class="bento-cell bento-brand">
+     <div class="bento-brand-copy">
+      <span class="icon-tile icon-tile-on-brand" aria-hidden="true"><svg class="icon" focusable="false"><use href="#i-files"></use></svg></span>
+      <h3 class="card-title">Convênios e produção</h3>
+      <p>Registre tarifas, produção, lotes, repasses e glosas para acompanhar o ciclo financeiro de convênios dentro do consultório.</p>
+     </div>
+     <ul class="tags tags-on-brand" role="list"><li>Produção</li><li>Repasses</li><li>Glosas</li></ul>
+    </article>
+   </div>
+   <div class="platform-foot" data-reveal>
+    <div class="note"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-shield-check"></use></svg><p><strong>Escopo claro:</strong> demonstração com dados fictícios. O financeiro é gerencial; comprovantes são administrativos. A plataforma não é prontuário e não substitui a contabilidade nem documentos fiscais. WhatsApp real ainda precisa ser ativado e validado na implantação.</p></div>
+    <a class="button button-primary" href="#piloto" data-cta="platform">Quero conhecer o piloto <span class="button-chip" aria-hidden="true"><svg class="icon" focusable="false"><use href="#i-arrow-right"></use></svg></span></a>
+   </div>
+  </div>
+ </section>
+
+ <section class="section story-section" aria-labelledby="story-title">
+  <div class="container">
+   <div class="story">
+    <picture class="story-media" data-reveal>
+     <source media="(max-width: 799px)" srcset="/site-assets/img/sala-de-espera-640x480.webp 640w, /site-assets/img/sala-de-espera-960x720.webp 960w" sizes="calc(100vw - 48px)" width="960" height="720">
+     <img src="/site-assets/img/sala-de-espera-1600x760.webp" srcset="/site-assets/img/sala-de-espera-1200x570.webp 1200w, /site-assets/img/sala-de-espera-1600x760.webp 1600w, /site-assets/img/sala-de-espera-2400x1140.webp 2400w" sizes="(min-width: 1318px) 1254px, calc(100vw - 64px)" width="1600" height="760" alt="Sala de espera de consultório com sofás verde-azulados, relógio na parede e uma planta" loading="lazy" decoding="async">
+    </picture>
+    <div class="story-panel" data-reveal>
+     <h2 id="story-title" class="section-title">Entre uma mensagem e outra, existe uma <em>clínica inteira.</em></h2>
+     <div class="story-copy">
+      <p>A recepção acolhe quem chega, organiza a agenda e responde quem ainda está do outro lado da tela.</p>
+      <p>Valores, horários, endereço, disponibilidade. Quando as perguntas se acumulam, acompanhar cada conversa vira mais uma tarefa.</p>
+     </div>
+     <p class="story-close">A IZMED conecta essas etapas para dar continuidade ao atendimento.</p>
+    </div>
+   </div>
+  </div>
+ </section>
+
+ <section class="section features-section" id="sua-equipe" aria-labelledby="features-title">
+  <div class="container features-grid">
+   <header class="features-head" data-reveal>
+    <h2 id="features-title" class="section-title">Mais clareza para o paciente. <span class="title-soft">Mais controle para a equipe.</span></h2>
+    <ol class="feature-index" role="list">
+     <li><a href="#etapa-informacoes"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-info"></use></svg>Informações</a></li>
+     <li><a href="#etapa-agendamento"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-calendar-check"></use></svg>Agendamento</a></li>
+     <li><a href="#etapa-continuidade"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-user-switch"></use></svg>Continuidade</a></li>
+    </ol>
+   </header>
+   <div class="feature-list">
+    <article class="feature" id="etapa-informacoes" data-reveal>
+     <div class="feature-art" aria-hidden="true">
+      <div class="mini-card">
+       <p class="mini-head"><span class="mini-logo">i.</span><span>Informações do consultório</span></p>
+       <dl class="mini-facts">
+        <div><dt><svg class="icon" focusable="false"><use href="#i-currency-circle-dollar"></use></svg>Consulta particular</dt><dd>R$ 350,00</dd></div>
+        <div><dt><svg class="icon" focusable="false"><use href="#i-clock"></use></svg>Atendimento</dt><dd>Seg a sex, 8h às 18h</dd></div>
+        <div><dt><svg class="icon" focusable="false"><use href="#i-map-pin"></use></svg>Endereço</dt><dd>Av. das Palmeiras, 120</dd></div>
+       </dl>
+       <p class="mini-foot"><svg class="icon" focusable="false"><use href="#i-seal-check"></use></svg>Informações cadastradas</p>
+      </div>
+      <p class="art-caption">Exemplo fictício</p>
+     </div>
+     <div class="feature-text">
+      <h3 class="feature-title">As respostas começam no seu consultório.</h3>
+      <p>Serviços, valores e condições cadastrados orientam o atendimento. Sua equipe define o que pode ser informado.</p>
+     </div>
+    </article>
+    <article class="feature" id="etapa-agendamento" data-reveal>
+     <div class="feature-art" aria-hidden="true">
+      <div class="mini-card">
+       <p class="mini-head"><svg class="icon" focusable="false"><use href="#i-calendar-dots"></use></svg><span>Agenda, terça-feira</span></p>
+       <div class="mini-schedule">
+        <div class="mini-slot"><time>14:00</time><span class="mini-empty"></span></div>
+        <div class="mini-slot is-booked"><time>14:30</time><div><strong>Marina</strong><span>Primeira consulta</span></div><svg class="icon" focusable="false"><use href="#i-check-circle"></use></svg></div>
+        <div class="mini-slot"><time>15:00</time><span class="mini-empty"></span></div>
+       </div>
+      </div>
+      <p class="art-caption">Exemplo fictício</p>
+     </div>
+     <div class="feature-text">
+      <h3 class="feature-title">A conversa termina com o horário organizado.</h3>
+      <p>A disponibilidade é consultada e a reserva só é registrada depois da confirmação. Cada etapa tem seu próximo passo.</p>
+     </div>
+    </article>
+    <article class="feature" id="etapa-continuidade" data-reveal>
+     <div class="feature-art" aria-hidden="true">
+      <div class="mini-card">
+       <div class="mini-handoff">
+        <span class="round-avatar"><svg class="icon" focusable="false"><use href="#i-sparkle"></use></svg></span>
+        <span class="mini-path"></span>
+        <span class="round-avatar peach">R</span>
+       </div>
+       <div class="mini-notice"><svg class="icon" focusable="false"><use href="#i-user-switch"></use></svg><div><strong>Recepção assumiu</strong><span>Histórico disponível para a equipe</span></div></div>
+       <span class="pill neutral">Automação pausada</span>
+      </div>
+      <p class="art-caption">Fluxo ilustrativo</p>
+     </div>
+     <div class="feature-text">
+      <h3 class="feature-title">Sua equipe assume. A conversa continua.</h3>
+      <p>Quando uma pessoa entra no atendimento, a automação pausa. O histórico ajuda a recepção a seguir de onde parou.</p>
+     </div>
+    </article>
+   </div>
+  </div>
+ </section>
+
+ <section class="section band-deep control-section" aria-labelledby="control-title">
+  <svg class="control-watermark" aria-hidden="true" focusable="false"><use href="#i-mark"></use></svg>
+  <div class="container">
+   <div class="control-top">
+    <div class="control-copy" data-reveal>
+     <p class="eyebrow">Tecnologia com responsabilidade</p>
+     <h2 id="control-title" class="control-title">Automação com espaço para o cuidado humano.</h2>
+     <p class="control-lead">As informações vêm do cadastro. Os horários vêm da agenda. E sua equipe continua no controle.</p>
+     <a class="button button-on-brand" href="#piloto" data-cta="control">Quero conhecer o piloto <span class="button-chip" aria-hidden="true"><svg class="icon" focusable="false"><use href="#i-arrow-right"></use></svg></span></a>
+    </div>
+    <figure class="control-media bezel bezel-on-brand" data-reveal>
+     <img class="bezel-core" src="/site-assets/img/consulta-720x900.webp" srcset="/site-assets/img/consulta-480x600.webp 480w, /site-assets/img/consulta-720x900.webp 720w, /site-assets/img/consulta-960x1200.webp 960w" sizes="(min-width: 1024px) 460px, calc(100vw - 48px)" width="720" height="900" alt="Médica conversando com um paciente durante a consulta, com papéis sobre a mesa" loading="lazy" decoding="async">
+    </figure>
+   </div>
+   <ul class="principles" role="list" data-reveal-group>
+    <li class="principle"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-address-book"></use></svg><h3>Uma base definida pela clínica</h3><p>O fluxo consulta as informações autorizadas do consultório. Manter esse cadastro atualizado faz parte da operação.</p></li>
+    <li class="principle"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-list-checks"></use></svg><h3>Confirmação antes da reserva</h3><p>O paciente revisa os dados. O horário é verificado novamente antes de registrar o agendamento.</p></li>
+    <li class="principle"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-hand-heart"></use></svg><h3>Uma pessoa quando é preciso</h3><p>A assistente se identifica como virtual. Questões clínicas e situações fora do fluxo precisam da atenção da equipe.</p></li>
+   </ul>
+  </div>
+ </section>
+
+ <section class="section steps-section" aria-labelledby="steps-title">
+  <div class="container">
+   <header class="section-head" data-reveal>
+    <h2 id="steps-title" class="section-title">Seu consultório tem uma rotina. <span class="title-soft">Começamos por ela.</span></h2>
+    <p class="section-lead">O piloto é assistido. Conhecemos o fluxo, configuramos e avaliamos os próximos passos juntos.</p>
+   </header>
+   <ol class="timeline" role="list" data-reveal-group>
+    <li class="timeline-step"><span class="timeline-marker" aria-hidden="true">1</span><h3>Entender</h3><p>Serviços, agenda e necessidades da recepção. Primeiro, entendemos o seu cenário.</p></li>
+    <li class="timeline-step"><span class="timeline-marker" aria-hidden="true">2</span><h3>Configurar e testar</h3><p>Informações autorizadas, horários e passagem para a equipe. Testamos antes de ampliar o uso.</p></li>
+    <li class="timeline-step"><span class="timeline-marker" aria-hidden="true">3</span><h3>Acompanhar</h3><p>Revisamos os atendimentos do piloto e os ajustes necessários com o consultório.</p></li>
+   </ol>
+   <div class="note note-tint" data-reveal><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-chat-circle-text"></use></svg><p><strong>O primeiro passo já está disponível.</strong> Conheça a experiência no chat web. O canal WhatsApp e o escopo do consultório serão avaliados na implantação.</p></div>
+  </div>
+ </section>
+
+ <section class="section section-subtle faq-section" id="perguntas" aria-labelledby="faq-title">
+  <div class="container faq-grid">
+   <header class="faq-head" data-reveal>
+    <h2 id="faq-title" class="section-title">Boas perguntas. <span class="title-soft">Respostas claras.</span></h2>
+    <p class="section-lead">Entenda a proposta e o momento atual do piloto IZMED.</p>
+   </header>
+   <div class="faq-items" data-reveal-group>
+    <details class="faq-item"><summary>Já posso usar no WhatsApp?<span class="faq-icon" aria-hidden="true"><svg class="icon" focusable="false"><use href="#i-plus"></use></svg></span></summary><p>Estamos preparando a implantação assistida no WhatsApp. A demonstração atual funciona no chat web; a ativação do número e as condições de uso serão verificadas antes do piloto.</p></details>
+    <details class="faq-item"><summary>A IZMED substitui minha secretária?<span class="faq-icon" aria-hidden="true"><svg class="icon" focusable="false"><use href="#i-plus"></use></svg></span></summary><p>A proposta é apoiar a recepção nas etapas repetitivas. Sua equipe continua responsável pelas situações que precisam de atenção humana e pode assumir a conversa.</p></details>
+    <details class="faq-item"><summary>Como as respostas e os horários são conferidos?<span class="faq-icon" aria-hidden="true"><svg class="icon" focusable="false"><use href="#i-plus"></use></svg></span></summary><p>O fluxo usa informações cadastradas e consulta a agenda antes de reservar. O cadastro precisa estar atualizado, e situações não previstas exigem revisão da equipe. Os testes do piloto servem para identificar e corrigir falhas.</p></details>
+    <details class="faq-item"><summary>Preciso trocar meu sistema atual?<span class="faq-icon" aria-hidden="true"><svg class="icon" focusable="false"><use href="#i-plus"></use></svg></span></summary><p>O piloto usa a agenda IZMED. Avaliamos sua operação antes de propor a implantação. Integração automática com outros sistemas ainda não está disponível.</p></details>
+    <details class="faq-item"><summary>Posso conhecer sem dados de pacientes?<span class="faq-icon" aria-hidden="true"><svg class="icon" focusable="false"><use href="#i-plus"></use></svg></span></summary><p>Sim. A demonstração desta página usa informações fictícias e não faz reservas reais. O piloto inicial é de escopo acompanhado, com um consultório e um profissional.</p></details>
+    <details class="faq-item"><summary>Quanto custa o piloto?<span class="faq-icon" aria-hidden="true"><svg class="icon" focusable="false"><use href="#i-plus"></use></svg></span></summary><p>As condições comerciais serão apresentadas depois de entender o escopo do consultório. Este formulário é uma solicitação de contato e não gera contratação ou cobrança.</p></details>
+   </div>
+  </div>
+ </section>
+
+ <section class="section band-brand contact-section" id="piloto" aria-labelledby="contact-title">
+  <div class="container contact-grid">
+   <div class="contact-copy" data-reveal>
+    <p class="eyebrow">Conheça o piloto IZMED</p>
+    <h2 id="contact-title" class="contact-title">Seu próximo agendamento começa <span class="title-soft">com uma conversa.</span></h2>
+    <p class="contact-lead">Veja como a IZMED pode se encaixar na rotina do seu consultório.</p>
+    <ul class="checklist" role="list">
+     <li><span class="check-chip" aria-hidden="true"><svg class="icon" focusable="false"><use href="#i-check"></use></svg></span>Demonstração do fluxo de atendimento</li>
+     <li><span class="check-chip" aria-hidden="true"><svg class="icon" focusable="false"><use href="#i-check"></use></svg></span>Avaliação do cenário do consultório</li>
+     <li><span class="check-chip" aria-hidden="true"><svg class="icon" focusable="false"><use href="#i-check"></use></svg></span>Condições apresentadas antes da contratação</li>
+    </ul>
+   </div>
+   <div class="contact-form-wrap bezel bezel-on-brand" data-reveal>
+    <div class="form-card bezel-core">
+     <form id="pilot-form" method="post" action="/api/public/site/leads">
+      <fieldset id="pilot-fields" disabled>
+       <h3 class="form-title">Vamos conhecer seu consultório?</h3>
+       <p class="form-intro">Deixe um contato profissional para conversarmos.</p>
+       <div class="field"><label for="lead-name">Seu nome</label><input id="lead-name" name="name" autocomplete="name" minlength="2" maxlength="100" required placeholder="Como podemos chamar você?"></div>
+       <div class="field"><label for="lead-clinic">Nome do consultório</label><input id="lead-clinic" name="clinic" autocomplete="organization" minlength="2" maxlength="120" required placeholder="Consultório ou clínica"></div>
+       <div class="field field-select" id="lead-specialty-field"><label for="lead-specialty">Especialidade</label><select id="lead-specialty" name="specialty"><option value="">Selecione (opcional)</option></select></div>
+       <div class="field"><label for="lead-contact">WhatsApp ou e-mail profissional</label><input id="lead-contact" name="contact" autocomplete="email" maxlength="254" required placeholder="(DDD) número ou seu@email.com" aria-describedby="lead-contact-help"><small id="lead-contact-help">Escolha o contato pelo qual prefere receber nosso retorno.</small></div>
+       <div class="field field-select"><label for="lead-purpose">Sobre o que vamos conversar?</label><select id="lead-purpose" name="purpose"><option value="piloto">Quero conhecer o piloto IZMED</option><option value="privacidade">Quero falar sobre meus dados</option></select></div>
+       <div class="honey" aria-hidden="true"><label for="lead-website">Seu website</label><input id="lead-website" name="website" tabindex="-1" autocomplete="off"></div>
+       <label class="consent"><input name="consent" type="checkbox" required><span>Autorizo o contato sobre este pedido e li o <a href="/site/privacidade">aviso de privacidade</a>.</span></label>
+       <button class="button button-primary button-block submit-button" type="submit">Quero conhecer o piloto <span class="button-chip" aria-hidden="true"><svg class="icon" focusable="false"><use href="#i-arrow-right"></use></svg></span></button>
+       <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+       <p class="form-fine"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-lock-simple"></use></svg>Sem dados de pacientes. Sem contratação automática.</p>
+      </fieldset>
+      <p id="form-loading" class="form-fine">Ativando formulário… Se ele não ficar disponível, recarregue a página com JavaScript habilitado.</p>
+     </form>
+     <div id="form-success" class="form-success" hidden tabindex="-1">
+      <span class="success-mark" aria-hidden="true"><svg class="icon" focusable="false"><use href="#i-check"></use></svg></span>
+      <p class="form-kicker">Próximo passo</p>
+      <h3>Interesse registrado.</h3>
+      <p>Vamos usar o contato informado para conversar sobre o seu pedido.</p>
+      <a class="button button-outline" href="#como-funciona">Explorar demonstração <span class="button-chip" aria-hidden="true"><svg class="icon" focusable="false"><use href="#i-arrow-right"></use></svg></span></a>
+     </div>
+    </div>
+   </div>
+  </div>
+ </section>
+</main>
+
+<footer class="site-footer">
+ <div class="container footer-top">
+  <div class="footer-brand">
+   <a class="brand" href="/site" aria-label="IZMED, início"><svg class="logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 -1 138.67 34" width="138.67" height="34" aria-hidden="true" focusable="false"><rect x="0" y="-1" width="31" height="34" rx="9" class="logo-mark"/><rect x="7.5" y="8" width="6" height="16" rx="1" class="logo-bar"/><rect x="17.5" y="8" width="6" height="6" rx="1" class="logo-bar"/><rect x="17.5" y="18" width="6" height="6" rx="1" class="logo-bar"/><path class="logo-word" d="M41.91 27.64V10.17H46.97V27.64ZM44.44 8.02Q43.31 8.02 42.52 7.27Q41.73 6.53 41.73 5.5Q41.73 4.44 42.52 3.7Q43.31 2.97 44.44 2.97Q45.55 2.97 46.34 3.7Q47.12 4.44 47.12 5.5Q47.12 6.53 46.34 7.27Q45.55 8.02 44.44 8.02Z M49.02 27.64V24.66L57.41 14.31V14.19H49.3V10.17H63.49V13.45L55.64 23.5V23.62H63.78V27.64Z M65.83 27.64V10.17H70.51L70.79 14.61H70.43Q70.82 12.95 71.62 11.92Q72.41 10.89 73.48 10.41Q74.55 9.92 75.74 9.92Q77.62 9.92 78.76 11.12Q79.91 12.33 80.51 14.94H79.93Q80.33 13.19 81.23 12.08Q82.13 10.97 83.34 10.45Q84.55 9.92 85.88 9.92Q87.49 9.92 88.76 10.62Q90.02 11.33 90.74 12.66Q91.46 13.98 91.46 15.86V27.64H86.4V16.92Q86.4 15.52 85.65 14.81Q84.9 14.11 83.77 14.11Q82.94 14.11 82.34 14.48Q81.74 14.84 81.41 15.49Q81.08 16.14 81.08 17.03V27.64H76.21V16.83Q76.21 15.58 75.49 14.84Q74.77 14.11 73.63 14.11Q72.83 14.11 72.22 14.47Q71.6 14.83 71.25 15.51Q70.9 16.19 70.9 17.17V27.64Z M101.59 27.97Q98.87 27.97 96.92 26.88Q94.96 25.8 93.92 23.78Q92.87 21.77 92.87 18.98Q92.87 16.28 93.91 14.25Q94.95 12.22 96.86 11.09Q98.77 9.95 101.37 9.95Q103.13 9.95 104.65 10.52Q106.17 11.08 107.29 12.2Q108.42 13.31 109.05 14.97Q109.68 16.62 109.68 18.84V20.19H94.79V17.12H107.23L104.87 17.89Q104.87 16.59 104.48 15.66Q104.09 14.72 103.31 14.2Q102.54 13.69 101.4 13.69Q100.26 13.69 99.47 14.21Q98.68 14.73 98.27 15.64Q97.87 16.55 97.87 17.73V19.91Q97.87 21.34 98.34 22.3Q98.81 23.27 99.67 23.75Q100.52 24.23 101.67 24.23Q102.45 24.23 103.08 24.02Q103.71 23.8 104.17 23.37Q104.63 22.94 104.87 22.31L109.42 23.09Q108.99 24.58 107.93 25.67Q106.87 26.77 105.27 27.37Q103.67 27.97 101.59 27.97Z M117.36 27.91Q115.39 27.91 113.79 26.89Q112.18 25.88 111.25 23.87Q110.31 21.86 110.31 18.94Q110.31 15.91 111.28 13.91Q112.25 11.92 113.85 10.94Q115.45 9.95 117.32 9.95Q118.76 9.95 119.75 10.44Q120.73 10.92 121.36 11.66Q121.98 12.39 122.28 13.14H122.42V4.36H127.5V27.64H122.5V24.83H122.28Q121.95 25.58 121.32 26.28Q120.68 26.98 119.72 27.45Q118.75 27.91 117.36 27.91ZM119.01 23.91Q120.12 23.91 120.91 23.28Q121.7 22.66 122.11 21.54Q122.53 20.42 122.53 18.92Q122.53 17.41 122.12 16.3Q121.72 15.19 120.93 14.58Q120.14 13.97 119.01 13.97Q117.87 13.97 117.09 14.59Q116.31 15.22 115.91 16.33Q115.51 17.44 115.51 18.92Q115.51 20.39 115.91 21.52Q116.31 22.64 117.1 23.27Q117.89 23.91 119.01 23.91Z"/><path class="logo-period" d="M133.19 27.95Q131.98 27.95 131.16 27.15Q130.34 26.34 130.34 25.16Q130.34 23.97 131.16 23.16Q131.98 22.36 133.19 22.36Q134.38 22.36 135.2 23.16Q136.02 23.97 136.02 25.16Q136.02 26.34 135.2 27.15Q134.38 27.95 133.19 27.95Z"/></svg></a>
+   <p>Continuidade para as conversas. Mais espaço para cuidar.</p>
+  </div>
+  <nav class="footer-col footer-col-wide" aria-labelledby="footer-guides">
+   <h2 id="footer-guides" class="footer-title">Guias e ferramentas</h2>
+   <ul class="footer-links" role="list">
+    <li><a href="/conteudo">Guias para consultórios</a></li>
+    <li><a href="/conteudo/secretaria-virtual-consultorio">Secretária virtual</a></li>
+    <li><a href="/ferramentas/calculadora-faltas-consultorio">Calculadora de faltas</a></li>
+    <li><a href="/ferramentas/mensagem-lembrete-consulta">Lembrete de consulta</a></li>
+    <li><a href="/ferramentas/follow-up-orcamento-cirurgia">Follow-up de orçamento</a></li>
+    <li><a href="/ferramentas/taxa-cartao-consultorio">Calculadora de taxa</a></li>
+    <li><a href="/ferramentas/checklist-software-consultorio">Checklist para escolher um sistema</a></li>
+   </ul>
+  </nav>
+  <nav class="footer-col" aria-labelledby="footer-izmed">
+   <h2 id="footer-izmed" class="footer-title">IZMED</h2>
+   <ul class="footer-links" role="list">
+    <li><a href="/site/privacidade">Privacidade</a></li>
+    <li><a href="https://app.izmed.com.br/">Entrar <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow-up-right"></use></svg></a></li>
+   </ul>
+  </nav>
+ </div>
+ <div class="container">
+  <div class="footer-bottom">
+   <span>© 2026 IZMED</span>
+   <span>Recepção digital para consultórios · Piloto assistido</span>
+  </div>
+ </div>
+</footer>
+
+<div class="mobile-cta"><a class="button button-primary button-block" href="#piloto" data-cta="mobile">Quero conhecer o piloto <span class="button-chip" aria-hidden="true"><svg class="icon" focusable="false"><use href="#i-arrow-right"></use></svg></span></a></div>
+</body>
+</html>
